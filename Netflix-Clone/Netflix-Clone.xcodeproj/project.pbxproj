@@ -10,7 +10,6 @@
 		291DC3E127DA9EE100F5CA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC3E027DA9EE100F5CA15 /* AppDelegate.swift */; };
 		291DC3E327DA9EE100F5CA15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC3E227DA9EE100F5CA15 /* SceneDelegate.swift */; };
 		291DC3E527DA9EE100F5CA15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC3E427DA9EE100F5CA15 /* ViewController.swift */; };
-		291DC3E827DA9EE100F5CA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291DC3E627DA9EE100F5CA15 /* Main.storyboard */; };
 		291DC3EA27DA9EE200F5CA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291DC3E927DA9EE200F5CA15 /* Assets.xcassets */; };
 		291DC3ED27DA9EE200F5CA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291DC3EB27DA9EE200F5CA15 /* LaunchScreen.storyboard */; };
 		291DC3F827DA9EE200F5CA15 /* Netflix_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC3F727DA9EE200F5CA15 /* Netflix_CloneTests.swift */; };
@@ -40,7 +39,6 @@
 		291DC3E027DA9EE100F5CA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		291DC3E227DA9EE100F5CA15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		291DC3E427DA9EE100F5CA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		291DC3E727DA9EE100F5CA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		291DC3E927DA9EE200F5CA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291DC3EC27DA9EE200F5CA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		291DC3EE27DA9EE200F5CA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				291DC3E027DA9EE100F5CA15 /* AppDelegate.swift */,
 				291DC3E227DA9EE100F5CA15 /* SceneDelegate.swift */,
 				291DC3E427DA9EE100F5CA15 /* ViewController.swift */,
-				291DC3E627DA9EE100F5CA15 /* Main.storyboard */,
 				291DC3E927DA9EE200F5CA15 /* Assets.xcassets */,
 				291DC3EB27DA9EE200F5CA15 /* LaunchScreen.storyboard */,
 				291DC3EE27DA9EE200F5CA15 /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				291DC3ED27DA9EE200F5CA15 /* LaunchScreen.storyboard in Resources */,
 				291DC3EA27DA9EE200F5CA15 /* Assets.xcassets in Resources */,
-				291DC3E827DA9EE100F5CA15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		291DC3E627DA9EE100F5CA15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				291DC3E727DA9EE100F5CA15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		291DC3EB27DA9EE200F5CA15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,14 +425,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KG8C39BJ26;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Netflix-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,6 +442,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,14 +454,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KG8C39BJ26;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Netflix-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +471,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
