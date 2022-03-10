@@ -7,7 +7,7 @@
 
 import XCTest
 
-class Netflix_CloneUITestsLaunchTests: XCTestCase {
+class NetflixCloneUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
