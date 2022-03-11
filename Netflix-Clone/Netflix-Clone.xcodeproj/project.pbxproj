@@ -18,6 +18,8 @@
 		291DC41827DAA4F500F5CA15 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC41727DAA4F500F5CA15 /* UpcomingViewController.swift */; };
 		291DC41A27DAA50500F5CA15 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC41927DAA50500F5CA15 /* SearchViewController.swift */; };
 		291DC41D27DAA6E200F5CA15 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DC41C27DAA6E200F5CA15 /* DownloadsViewController.swift */; };
+		29F8FCE527DAB79800B36E96 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8FCE427DAB79800B36E96 /* CollectionViewTableViewCell.swift */; };
+		29F8FCE727DABE2600B36E96 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8FCE627DABE2600B36E96 /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		291DC41727DAA4F500F5CA15 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		291DC41927DAA50500F5CA15 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		291DC41C27DAA6E200F5CA15 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		29F8FCE427DAB79800B36E96 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		29F8FCE627DABE2600B36E96 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,11 @@
 		291DC3DF27DA9EE100F5CA15 /* Netflix-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				29F8FCE327DAB76600B36E96 /* Managers */,
+				29F8FCE227DAB76000B36E96 /* Resources */,
+				29F8FCDF27DAB74100B36E96 /* Models */,
+				29F8FCE027DAB74B00B36E96 /* Views */,
+				29F8FCE127DAB75600B36E96 /* ViewModels */,
 				291DC41027DAA3C600F5CA15 /* Screens */,
 				291DC3E027DA9EE100F5CA15 /* AppDelegate.swift */,
 				291DC3E927DA9EE200F5CA15 /* Assets.xcassets */,
@@ -171,6 +180,43 @@
 				291DC41C27DAA6E200F5CA15 /* DownloadsViewController.swift */,
 			);
 			path = Downloads;
+			sourceTree = "<group>";
+		};
+		29F8FCDF27DAB74100B36E96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29F8FCE027DAB74B00B36E96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29F8FCE427DAB79800B36E96 /* CollectionViewTableViewCell.swift */,
+				29F8FCE627DABE2600B36E96 /* HeroHeaderUIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29F8FCE127DAB75600B36E96 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		29F8FCE227DAB76000B36E96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29F8FCE327DAB76600B36E96 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,8 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				291DC41A27DAA50500F5CA15 /* SearchViewController.swift in Sources */,
+				29F8FCE727DABE2600B36E96 /* HeroHeaderUIView.swift in Sources */,
 				291DC3E527DA9EE100F5CA15 /* MainTabBarViewController.swift in Sources */,
 				291DC41D27DAA6E200F5CA15 /* DownloadsViewController.swift in Sources */,
+				29F8FCE527DAB79800B36E96 /* CollectionViewTableViewCell.swift in Sources */,
 				291DC3E127DA9EE100F5CA15 /* AppDelegate.swift in Sources */,
 				291DC41827DAA4F500F5CA15 /* UpcomingViewController.swift in Sources */,
 				291DC41427DAA4CC00F5CA15 /* HomeViewController.swift in Sources */,
@@ -513,7 +561,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-Clone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademfurkan.NetflixClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -542,7 +590,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-Clone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademfurkan.NetflixClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -562,7 +610,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-CloneTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademfurkan.NetflixCloneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -582,7 +630,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-CloneTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademfurkan.NetflixCloneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -600,7 +648,7 @@
 				DEVELOPMENT_TEAM = KG8C39BJ26;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-CloneUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademfurkan.NetflixCloneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -618,7 +666,7 @@
 				DEVELOPMENT_TEAM = KG8C39BJ26;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ademfurkan.Netflix-CloneUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademfurkan.NetflixCloneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

@@ -15,7 +15,7 @@ class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = .systemBackground
 
         let viewControllers = [
             homeViewController,
@@ -24,7 +24,37 @@ class MainTabBarViewController: UITabBarController {
             downloadsViewController
         ]
 
+        setupTabBars()
+
         setViewControllers(viewControllers, animated: true)
     }
 
+}
+
+private extension MainTabBarViewController {
+    func setupTabBars() {
+        homeViewController.tabBarItem.title = Titles.homeTabBarTitle
+        homeViewController.tabBarItem.image = UIImage(systemName: Images.homeTabBarImage)
+        upcomingViewController.tabBarItem.title = Titles.upcomingTabBarTitle
+        upcomingViewController.tabBarItem.image = UIImage(systemName: Images.upcomingTabBarImage)
+        searchViewController.tabBarItem.title = Titles.searchTabBarTitle
+        searchViewController.tabBarItem.image = UIImage(systemName: Images.searchTabBarImage)
+        downloadsViewController.tabBarItem.title = Titles.downloadsTabBarTitle
+        downloadsViewController.tabBarItem.image = UIImage(systemName: Images.downloadsTabBarImage)
+        tabBar.tintColor = .label
+    }
+
+    enum Images {
+        static let homeTabBarImage = "house"
+        static let upcomingTabBarImage = "play.rectangle.on.rectangle"
+        static let searchTabBarImage = "magnifyingglass"
+        static let downloadsTabBarImage = "square.and.arrow.down"
+    }
+
+    enum Titles {
+        static let homeTabBarTitle = "Home"
+        static let upcomingTabBarTitle = "New and Popular"
+        static let searchTabBarTitle = "Search"
+        static let downloadsTabBarTitle = "Downloads"
+    }
 }
